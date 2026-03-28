@@ -1,0 +1,5 @@
+valid_username: tomsmith
+valid_password: SuperSecretPassword!
+
+invalid_username: tomholland
+invalid_password: Password!
