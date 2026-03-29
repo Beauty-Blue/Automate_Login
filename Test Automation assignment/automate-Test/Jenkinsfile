@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout Code From Git') {
+            steps {
+                git url: 'https://github.com/Beauty-Blue/Automate_Login.git', branch: 'main'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                bat 'pip install -r automate-Test/requirements.txt'
+            }
+        }
+
+        stage('Run Test Automate') {
+            steps {
+                bat 'robot automate-Test/testcases/'
+            }
+        }
+
+        stage('Send Result To Jenkins') {
+            steps {
+                archiveArtifacts artifacts: '**/*.html', allowEmptyArchive: true
+            }
+        }
+    }
+}

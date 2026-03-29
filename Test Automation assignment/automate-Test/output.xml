@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2026-03-28T23:43:10.296946" rpa="false" schemaversion="5">
-<suite id="s1" name="Login failed username" source="C:\Users\YourName\Desktop\React\QA\automated\Test Automation assignment\automate-Test\testcases\Login_failed_username.robot">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2026-03-29T21:50:04.933931" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcases" source="C:\Users\YourName\Desktop\React\QA\automated\Automate_Login\Test Automation assignment\automate-Test\testcases">
+<suite id="s1-s1" name="Login failed password" source="C:\Users\YourName\Desktop\React\QA\automated\Automate_Login\Test Automation assignment\automate-Test\testcases\Login_failed_password.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2026-03-28T23:43:10.832293" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<msg time="2026-03-29T21:50:05.309574" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
 <arg>${baseUrl}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-03-28T23:43:10.831728" elapsed="5.757185"/>
+<status status="PASS" start="2026-03-29T21:50:05.308805" elapsed="5.138576"/>
 </kw>
-<test id="s1-t1" name="Login failed - username not found" line="12">
+<test id="s1-s1-t1" name="Login failed - wrong password" line="12">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2026-03-28T23:43:16.591058" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<msg time="2026-03-29T21:50:10.448553" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
 <arg>${baseUrl}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2026-03-28T23:43:16.590763" elapsed="0.320058"/>
+<status status="PASS" start="2026-03-29T21:50:10.448305" elapsed="0.290948"/>
 </kw>
 <kw name="user login to herokuapp platform with" owner="LoginPageKeywords">
 <kw name="Wait until element is ready then input text" owner="CommonKeywords">
@@ -21,118 +22,413 @@
 <arg>${locator}</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-28T23:43:16.912857" elapsed="0.037367"/>
+<status status="PASS" start="2026-03-29T21:50:10.742072" elapsed="0.024793"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2026-03-28T23:43:16.950448" elapsed="0.022473"/>
+<status status="PASS" start="2026-03-29T21:50:10.767143" elapsed="0.022436"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-28T23:43:16.973114" elapsed="0.045466"/>
+<status status="PASS" start="2026-03-29T21:50:10.789815" elapsed="0.041650"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-28T23:43:17.019113" level="INFO">Typing text 'tomholland' into text field 'id=username'.</msg>
+<msg time="2026-03-29T21:50:10.831951" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-28T23:43:17.018805" elapsed="0.141856"/>
+<status status="PASS" start="2026-03-29T21:50:10.831669" elapsed="0.072516"/>
 </kw>
 <arg>id=username</arg>
 <arg>${username}</arg>
-<status status="PASS" start="2026-03-28T23:43:16.912224" elapsed="0.248780"/>
+<status status="PASS" start="2026-03-29T21:50:10.741383" elapsed="0.162962"/>
 </kw>
 <kw name="Wait until element is ready then input text" owner="CommonKeywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-28T23:43:17.161909" elapsed="0.020268"/>
+<status status="PASS" start="2026-03-29T21:50:10.905383" elapsed="0.017485"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2026-03-28T23:43:17.182373" elapsed="0.016504"/>
+<status status="PASS" start="2026-03-29T21:50:10.923069" elapsed="0.015044"/>
 </kw>
 <kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-28T23:43:17.199055" elapsed="0.026054"/>
+<status status="PASS" start="2026-03-29T21:50:10.938353" elapsed="0.025856"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-03-28T23:43:17.225731" level="INFO">Typing text 'Password!' into text field 'id=password'.</msg>
+<msg time="2026-03-29T21:50:10.964639" level="INFO">Typing text 'Password!' into text field 'id=password'.</msg>
 <arg>${locator}</arg>
 <arg>${text}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-28T23:43:17.225424" elapsed="0.078037"/>
+<status status="PASS" start="2026-03-29T21:50:10.964388" elapsed="0.072196"/>
 </kw>
 <arg>id=password</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2026-03-28T23:43:17.161488" elapsed="0.142151"/>
+<status status="PASS" start="2026-03-29T21:50:10.904676" elapsed="0.132115"/>
 </kw>
 <kw name="Wait until element is ready then click element" owner="CommonKeywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-28T23:43:17.304260" elapsed="0.025879"/>
+<status status="PASS" start="2026-03-29T21:50:11.037378" elapsed="0.017899"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${locator}</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2026-03-28T23:43:17.330450" elapsed="0.017214"/>
+<status status="PASS" start="2026-03-29T21:50:11.055548" elapsed="0.016922"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-03-28T23:43:17.348057" level="INFO">Clicking element 'xpath=//button[@type="submit"]'.</msg>
+<msg time="2026-03-29T21:50:11.072983" level="INFO">Clicking element 'xpath=//button[@type="submit"]'.</msg>
 <arg>${locator}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-03-28T23:43:17.347837" elapsed="0.650057"/>
+<status status="PASS" start="2026-03-29T21:50:11.072737" elapsed="0.060965"/>
 </kw>
 <arg>xpath=//button[@type="submit"]</arg>
-<status status="PASS" start="2026-03-28T23:43:17.303910" elapsed="0.694144"/>
+<status status="PASS" start="2026-03-29T21:50:11.037037" elapsed="0.096809"/>
 </kw>
-<arg>${invalid_username}</arg>
+<arg>${valid_username}</arg>
 <arg>${invalid_password}</arg>
-<status status="PASS" start="2026-03-28T23:43:16.911539" elapsed="1.086636"/>
+<status status="PASS" start="2026-03-29T21:50:10.740502" elapsed="0.393433"/>
 </kw>
 <kw name="verify login fail message" owner="LoginPageKeywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=flash</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-03-28T23:43:17.999268" elapsed="0.020530"/>
+<status status="PASS" start="2026-03-29T21:50:11.134718" elapsed="0.827069"/>
 </kw>
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-03-28T23:43:18.043927" level="INFO">Element 'id=flash' contains text 'Your username is invalid!'.</msg>
+<msg time="2026-03-29T21:50:12.005257" level="INFO">Element 'id=flash' contains text 'Your password is invalid!'.</msg>
 <arg>id=flash</arg>
 <arg>${expected}</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-03-28T23:43:18.020058" elapsed="0.024048"/>
+<status status="PASS" start="2026-03-29T21:50:11.962523" elapsed="0.042918"/>
 </kw>
-<arg>Your username is invalid!</arg>
-<status status="PASS" start="2026-03-28T23:43:17.998714" elapsed="0.045509"/>
+<arg>Your password is invalid!</arg>
+<status status="PASS" start="2026-03-29T21:50:11.134357" elapsed="0.871288"/>
 </kw>
-<status status="PASS" start="2026-03-28T23:43:16.589709" elapsed="1.454836"/>
+<status status="PASS" start="2026-03-29T21:50:10.447661" elapsed="1.558525"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-03-28T23:43:18.045536" elapsed="2.426591"/>
+<status status="PASS" start="2026-03-29T21:50:12.008011" elapsed="2.392341"/>
 </kw>
-<status status="PASS" start="2026-03-28T23:43:10.298833" elapsed="10.173546"/>
+<status status="PASS" start="2026-03-29T21:50:04.976496" elapsed="9.424216"/>
+</suite>
+<suite id="s1-s2" name="Login failed username" source="C:\Users\YourName\Desktop\React\QA\automated\Automate_Login\Test Automation assignment\automate-Test\testcases\Login_failed_username.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-03-29T21:50:14.434030" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-29T21:50:14.433112" elapsed="5.134245"/>
+</kw>
+<test id="s1-s2-t1" name="Login failed - username not found" line="12">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:19.571902" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<arg>${baseUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-03-29T21:50:19.571094" elapsed="0.346818"/>
+</kw>
+<kw name="user login to herokuapp platform with" owner="LoginPageKeywords">
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-29T21:50:19.919442" elapsed="0.022069"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-03-29T21:50:19.941696" elapsed="0.024701"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-29T21:50:19.966594" elapsed="0.048945"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:20.016368" level="INFO">Typing text 'tomholland' into text field 'id=username'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-29T21:50:20.016011" elapsed="0.096230"/>
+</kw>
+<arg>id=username</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2026-03-29T21:50:19.919049" elapsed="0.193412"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-29T21:50:20.113173" elapsed="0.020946"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-03-29T21:50:20.134389" elapsed="0.019581"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-29T21:50:20.154402" elapsed="0.032238"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:20.187155" level="INFO">Typing text 'Password!' into text field 'id=password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-29T21:50:20.186858" elapsed="0.082035"/>
+</kw>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-03-29T21:50:20.112732" elapsed="0.156313"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-29T21:50:20.269633" elapsed="0.020583"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-03-29T21:50:20.290512" elapsed="0.022632"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:20.313807" level="INFO">Clicking element 'xpath=//button[@type="submit"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-29T21:50:20.313446" elapsed="0.076454"/>
+</kw>
+<arg>xpath=//button[@type="submit"]</arg>
+<status status="PASS" start="2026-03-29T21:50:20.269291" elapsed="0.120843"/>
+</kw>
+<arg>${invalid_username}</arg>
+<arg>${invalid_password}</arg>
+<status status="PASS" start="2026-03-29T21:50:19.918531" elapsed="0.471706"/>
+</kw>
+<kw name="verify login fail message" owner="LoginPageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=flash</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-29T21:50:20.391342" elapsed="1.429654"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:21.841631" level="INFO">Element 'id=flash' contains text 'Your username is invalid!'.</msg>
+<arg>id=flash</arg>
+<arg>${expected}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-03-29T21:50:21.821242" elapsed="0.020492"/>
+</kw>
+<arg>Your username is invalid!</arg>
+<status status="PASS" start="2026-03-29T21:50:20.390762" elapsed="1.451126"/>
+</kw>
+<status status="PASS" start="2026-03-29T21:50:19.567860" elapsed="2.274427"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-29T21:50:21.843577" elapsed="2.391181"/>
+</kw>
+<status status="PASS" start="2026-03-29T21:50:14.405335" elapsed="9.829758"/>
+</suite>
+<suite id="s1-s3" name="Login success" source="C:\Users\YourName\Desktop\React\QA\automated\Automate_Login\Test Automation assignment\automate-Test\testcases\Login_success.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-03-29T21:50:24.268437" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${baseUrl}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-29T21:50:24.266785" elapsed="6.201827"/>
+</kw>
+<test id="s1-s3-t1" name="As a user, I want to login success with valid credential" line="11">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:30.473886" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<arg>${baseUrl}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-03-29T21:50:30.472661" elapsed="0.343946"/>
+</kw>
+<kw name="user login to herokuapp platform with" owner="LoginPageKeywords">
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-29T21:50:30.817863" elapsed="0.022346"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-03-29T21:50:30.840527" elapsed="0.024685"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-29T21:50:30.865407" elapsed="0.049430"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:30.915570" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-29T21:50:30.915145" elapsed="0.091042"/>
+</kw>
+<arg>id=username</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2026-03-29T21:50:30.817537" elapsed="0.188817"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.007146" elapsed="0.021934"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.029356" elapsed="0.020113"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.049655" elapsed="0.032207"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:31.082387" level="INFO">Typing text 'SuperSecretPassword!' into text field 'id=password'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.082091" elapsed="0.087624"/>
+</kw>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-03-29T21:50:31.006648" elapsed="0.163214"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.170593" elapsed="0.021348"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.192193" elapsed="0.021282"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:31.214143" level="INFO">Clicking element 'xpath=//button[@type="submit"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.213779" elapsed="0.073696"/>
+</kw>
+<arg>xpath=//button[@type="submit"]</arg>
+<status status="PASS" start="2026-03-29T21:50:31.170103" elapsed="0.117616"/>
+</kw>
+<arg>${valid_username}</arg>
+<arg>${valid_password}</arg>
+<status status="PASS" start="2026-03-29T21:50:30.817063" elapsed="0.470799"/>
+</kw>
+<kw name="verify login success message" owner="LoginPageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=flash</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.288900" elapsed="0.612270"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:31.920225" level="INFO">Element 'id=flash' contains text 'You logged into a secure area!'.</msg>
+<arg>id=flash</arg>
+<arg>You logged into a secure area!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.901424" elapsed="0.018906"/>
+</kw>
+<status status="PASS" start="2026-03-29T21:50:31.288390" elapsed="0.632068"/>
+</kw>
+<kw name="user logout from herokuapp platform" owner="LoginPageKeywords">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.921801" elapsed="0.017092"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.939083" elapsed="0.021854"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:31.961520" level="INFO">Clicking element 'xpath=//a[@href="/logout"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-29T21:50:31.961204" elapsed="0.673251"/>
+</kw>
+<arg>xpath=//a[@href="/logout"]</arg>
+<status status="PASS" start="2026-03-29T21:50:31.921427" elapsed="0.713189"/>
+</kw>
+<status status="PASS" start="2026-03-29T21:50:31.920911" elapsed="0.713803"/>
+</kw>
+<kw name="verify logout success message" owner="LoginPageKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=flash</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-03-29T21:50:32.635528" elapsed="0.014078"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-29T21:50:32.665536" level="INFO">Element 'id=flash' contains text 'You logged out of the secure area!'.</msg>
+<arg>id=flash</arg>
+<arg>You logged out of the secure area!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2026-03-29T21:50:32.649792" elapsed="0.015849"/>
+</kw>
+<status status="PASS" start="2026-03-29T21:50:32.635189" elapsed="0.030590"/>
+</kw>
+<status status="PASS" start="2026-03-29T21:50:30.469444" elapsed="2.196658"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-29T21:50:32.667184" elapsed="2.403130"/>
+</kw>
+<status status="PASS" start="2026-03-29T21:50:24.239161" elapsed="10.831476"/>
+</suite>
+<status status="PASS" start="2026-03-29T21:50:04.935817" elapsed="30.139102"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Login failed username">Login failed username</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Testcases">Testcases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Login failed password">Testcases.Login failed password</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Login failed username">Testcases.Login failed username</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Login success">Testcases.Login success</stat>
 </suite>
 </statistics>
 <errors>
